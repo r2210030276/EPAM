@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete HTML Form Example</title>
+</head>
+<body>
+  <h1>Registration Form</h1>
+  <form action="/submit" method="POST" enctype="multipart/form-data">
+   
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    <br><br>
+    
+   
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+    
+   
+    <label for="range">Satisfaction (1-10):</label>
+    <input type="range" id="range" name="satisfaction" min="1" max="10" value="5">
+    <br><br>
+    
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+    <br><br>
+    
+
+    <label for="color">Favorite Color:</label>
+    <input type="color" id="color" name="color">
+    <br><br>
+    
+    <fieldset>
+      <legend>Choose your hobbies:</legend>
+      <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+      <label for="hobby1">Reading</label>
+      <br>
+    </fieldset>
+    <br>
+    
+   
+    <fieldset>
+      <legend>Gender:</legend>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <br>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label>
+      <br>
+    </fieldset>
+    <br>
+    
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">Select your country</option>
+      <option value="us">United States</option>
+    </select>
+    <br><br>
+   
+    <label for="profile-pic">Upload Profile Picture:</label>
+    <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+    <br><br>
+    
+    <label for="bio">Bio:</label>
+    <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself..."></textarea>
+    <br><br>
+   
+    <input type="hidden" name="form-id" value="registration-form">
+   
+    <button type="submit">Submit</button>
+  
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>
